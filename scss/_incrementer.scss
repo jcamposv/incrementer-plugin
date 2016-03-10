@@ -1,0 +1,32 @@
+.incrementer{
+  position: relative;
+  overflow: hidden;
+  .controls{
+
+    background-color: #fff;
+    position: absolute;
+    right: 7px;
+    top: 13px;
+    color:#666E63;
+    .control{
+      @include rem(font-size,0.8);
+      display: block;
+      margin-top: 0px;
+    }
+    &.plus{
+      top:14px;
+    }
+    &.minus{
+      bottom:6px;
+    }
+    &:hover{
+      color:#C0CB12;
+    }
+  }
+  @include breakpoint(880px) {
+    .controls{
+      right: 3px;
+      padding-right: 5px;
+    }
+  }
+}
